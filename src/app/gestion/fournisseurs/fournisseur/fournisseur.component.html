@@ -1,1 +1,52 @@
-<p>fournisseur works!</p>
+<div class="mat-elevation-z8" id="panel">
+    <mat-list-item><h4>Ajouter Fournisseur</h4></mat-list-item>
+<mat-divider></mat-divider>
+    <form [formGroup] ='form' class="normal-form" (submit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="400px">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="id"> 
+                    <mat-form-field>
+                        <input formControlName="nomFour" matInput placeholder="Nom *"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="nomCourtFour" matInput placeholder="Nom court *"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="villeFour" matInput placeholder="Ville "> 
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="adresseFour" matInput placeholder="Adresse * ">  
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <mat-form-field>
+                        <input formControlName="telFixFour" matInput placeholder="Fix *">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="telMobileFour" matInput placeholder="Mobile *">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="faxFour" matInput placeholder="Fax *">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="emailFour" matInput placeholder="Email *">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="primary" type="submit" [disabled]='form.invalid'>submit</button>
+                    </div>
+                    </div>
+                    
+                    
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>
