@@ -1,4 +1,5 @@
 export interface Fournissuer{
+    id?:number
     nomFour : String,
     nomCourtFour : String,
     villeFour :String,

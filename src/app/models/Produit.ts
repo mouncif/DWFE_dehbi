@@ -1,4 +1,5 @@
 export interface Produit{
+    id?:number
     nomProduit : String,
     nomCourtProduit : String,
     prixBaseProduit : number,

@@ -13,6 +13,10 @@ import { FournisseurListComponent } from './gestion/fournisseurs/fournisseur-lis
 import { ProduitsComponent } from './gestion/produits/produits.component';
 import { ProduitComponent } from './gestion/Produits/produit/produit.component';
 import { ProduitListComponent } from './gestion/Produits/produit-list/produit-list.component';
+import { GestionService } from './services/gestion.service';
+import { MaterialModule } from './material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,9 +34,12 @@ import { ProduitListComponent } from './gestion/Produits/produit-list/produit-li
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

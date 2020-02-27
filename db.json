@@ -1,0 +1,15 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nomClient": "dehbi",
+      "prenomClient": "ayoub",
+      "statuClient": "",
+      "villeClient": "Meknes",
+      "adresseClient": "adresse",
+      "telClient": "01234595",
+      "emailClient": "aaa@gmail.com",
+      "photoClient": ""
+    }
+  ]
+}

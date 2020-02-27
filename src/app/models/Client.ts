@@ -1,4 +1,5 @@
 export interface Client{
+    id?:number
     nomClient : String,
     prenomClient : String,
     statuClient : String,

@@ -1,1 +1,48 @@
-<p>client works!</p>
+<div class="panel">
+    <mat-list-item><h4>Ajouter Client</h4></mat-list-item>
+<mat-divider></mat-divider>
+    <form [formGroup] ='form' class="normal-form" (submit)="onSubmit()">
+        <mat-grid-list cols="2" rowHeight="400px">
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <input type="hidden" formControlName="id"> 
+                    <mat-form-field>
+                        <input formControlName="nomClient" matInput placeholder="Nom *"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="prenomClient" matInput placeholder="Prenom *"> 
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="statuClient" matInput placeholder="statut "> 
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="villeClient" matInput placeholder="Ville * ">  
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="controles-container">
+                    <mat-form-field>
+                        <input formControlName="adresseClient" matInput placeholder="Adresse *">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="telClient" matInput placeholder="Mobile *">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="emailClient" matInput placeholder="Email *">
+                        <mat-error>champ obligatoire</mat-error>
+                    </mat-form-field>
+                    <div class="button-row">
+                        <button mat-raised-button color="primary" type="submit" [disabled]='form.invalid'>submit</button>
+                    </div>
+                    </div>
+                    
+                    
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</div>
