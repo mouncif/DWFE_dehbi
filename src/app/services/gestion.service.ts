@@ -25,6 +25,22 @@ export class GestionService {
     this.url ='http://localhost:3000/clients';
     return this.http.put(`${this.url}/${client.id}`, client);
   }
+  getAllFours(){
+    this.url ='http://localhost:3000/fournissuers';
+    return this.http.get<Client[]>(this.url);
+  }
+  addFour(c){
+    this.url ='http://localhost:3000/fournissuers';
+    return this.http.post<Client>(this.url,c);
+  }
+  deleteFour(id){
+    this.url ='http://localhost:3000/fournissuers';
+    return this.http.delete(`${this.url}/${id}`);
+  }
+  updateFour(client){
+    this.url ='http://localhost:3000/fournissuers';
+    return this.http.put(`${this.url}/${client.id}`, client);
+  }
 
 
 

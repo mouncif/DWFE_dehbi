@@ -23,5 +23,18 @@
       "photoClient": ""
     }
     
+  ],
+  "fournissuers":[
+    {
+      "id":"1",
+    "nomFour" : "amine amine",
+    "nomCourtFour" : "Amine",
+    "villeFour" :"Dehbi",
+    "adresseFour": "Adresse",
+    "telFixFour": "123456789",
+    "telMobileFour": "123456789",
+    "faxFour": "123456789",
+    "emailFour": "12345678"
+    }
   ]
 }

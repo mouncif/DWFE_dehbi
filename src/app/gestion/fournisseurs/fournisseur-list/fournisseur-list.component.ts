@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GestionService } from 'src/app/services/gestion.service';
 
 @Component({
   selector: 'app-fournisseur-list',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fournisseur-list.component.css']
 })
 export class FournisseurListComponent implements OnInit {
-
-  constructor() { }
+  private dataSource ;
+  colums=["nomFour","nomCourtFour","villeFour","adresseFour","telFixFour","telMobileFour","faxFour","emailFour"]
+  constructor( private service : GestionService) { }
 
   ngOnInit() {
+    this.dataSource=this.service.getAllFours();
   }
 
 }

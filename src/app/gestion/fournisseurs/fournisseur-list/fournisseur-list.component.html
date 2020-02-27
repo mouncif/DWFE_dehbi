@@ -1,1 +1,38 @@
-<p>fournisseur-list works!</p>
+<div class="mat-elevation-z8" id="panel">
+    <table mat-table [dataSource] ='dataSource' >
+        <ng-container matColumnDef="nomFour">
+            <th mat-header-cell *matHeaderCellDef> Nom </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.nomFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="nomCourtFour">
+            <th mat-header-cell *matHeaderCellDef> Nom Court </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.nomCourtFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="villeFour">
+            <th mat-header-cell *matHeaderCellDef> Ville </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.villeFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="adresseFour">
+            <th mat-header-cell *matHeaderCellDef> Adresse </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.adresseFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="telFixFour">
+            <th mat-header-cell *matHeaderCellDef> Tel. Fix </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.telFixFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="telMobileFour">
+            <th mat-header-cell *matHeaderCellDef> Tel. Mobile </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.telMobileFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="faxFour">
+            <th mat-header-cell *matHeaderCellDef> Fax </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.faxFour}} </td>
+          </ng-container>
+          <ng-container matColumnDef="emailFour">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.emailFour}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="colums"></tr>
+          <tr mat-row *matRowDef="let row; columns: colums;"></tr>
+    </table>
+    </div>

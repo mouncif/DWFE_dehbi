@@ -29,15 +29,15 @@ export class ClientComponent implements OnInit {
   });
   initializeFormGroup() {
     this.form.setValue({
-      key: null,
-      fullName: '',
-      email: '',
-      mobile: '',
-      city: '',
-      gender: '1',
-      department: 0,
-      hireDate: '',
-      isPermanent: false
+      id: null,
+      nomClient: '',
+      prenomClient: '',
+      statuClient: '',
+      villeClient: '',
+      adresseClient: '',
+      telClient: '',
+      emailClient: '',
+      photoClient: ''
     });
 
 }  
