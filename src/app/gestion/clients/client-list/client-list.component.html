@@ -1,1 +1,34 @@
-<p>client-list works!</p>
+<div class="mat-elevation-z8" id="panel">
+    <table mat-table [dataSource] ='dataSource' >
+        <ng-container matColumnDef="nomClient">
+            <th mat-header-cell *matHeaderCellDef> Nom </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.nomClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="prenomClient">
+            <th mat-header-cell *matHeaderCellDef> Prenom </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.prenomClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="statuClient">
+            <th mat-header-cell *matHeaderCellDef> Statut </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.statuClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="villeClient">
+            <th mat-header-cell *matHeaderCellDef> Ville </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.villeClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="adresseClient">
+            <th mat-header-cell *matHeaderCellDef> Adresse </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.adresseClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="telClient">
+            <th mat-header-cell *matHeaderCellDef> Tel </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.telClient}} </td>
+          </ng-container>
+          <ng-container matColumnDef="emailClient">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let emp"> {{emp.emailClient}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="colums"></tr>
+          <tr mat-row *matRowDef="let row; columns: colums;"></tr>
+    </table>
+    </div>

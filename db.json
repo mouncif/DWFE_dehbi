@@ -10,6 +10,18 @@
       "telClient": "01234595",
       "emailClient": "aaa@gmail.com",
       "photoClient": ""
+    },
+    {
+      "id": 2,
+      "nomClient": "dehbi",
+      "prenomClient": "ayoub",
+      "statuClient": "active",
+      "villeClient": "BM",
+      "adresseClient": "adresse",
+      "telClient": "01234595",
+      "emailClient": "dehbi@gmail.com",
+      "photoClient": ""
     }
+    
   ]
 }

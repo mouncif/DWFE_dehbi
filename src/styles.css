@@ -34,10 +34,7 @@ mat-radio-group mat-radio-button{
 .button-row button{
     margin: 5px;
 }
-.panel{
-    background-color: #EFEFEF;
-    margin: 80px;
-}
+
 h4{
     text-align: center;
 }

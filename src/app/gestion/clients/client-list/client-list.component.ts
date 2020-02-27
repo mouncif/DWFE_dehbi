@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GestionService } from 'src/app/services/gestion.service';
 
 @Component({
   selector: 'app-client-list',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientListComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service : GestionService) { }
+  private dataSource ;
+  colums=["nomClient","prenomClient","statuClient","villeClient","adresseClient","telClient","emailClient"]
   ngOnInit() {
+    this.dataSource=this.service.getAllClients();
   }
 
 }
