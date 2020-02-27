@@ -21,6 +21,17 @@
       "telClient": "01234595",
       "emailClient": "dehbi@gmail.com",
       "photoClient": ""
+    },
+    {
+      "id": 3,
+      "nomClient": "dehbi",
+      "prenomClient": "youb",
+      "statuClient": "",
+      "villeClient": "Meknes",
+      "adresseClient": "ouislane",
+      "telClient": "12345678",
+      "emailClient": "aaa@gmail.com",
+      "photoClient": ""
     }
   ],
   "fournissuers": [
