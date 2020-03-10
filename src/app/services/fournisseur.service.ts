@@ -11,8 +11,7 @@ export class FournisseurService {
 
   constructor(private http : HttpClient) { }
   getAllFours(){
-    return this.http.get<
-    Fournissuer []>(this.url);
+    return this.http.get<Fournissuer []>(this.url);
   }
   addFour(f){
     return this.http.post<Fournissuer>(this.url,f);

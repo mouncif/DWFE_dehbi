@@ -1,1 +1,52 @@
-<p>produit-list works!</p>
+<button mat-raised-button  (click)="ajouter()">
+    <mat-icon>add</mat-icon>Create
+  </button>
+  <div class="mat-elevation-z8" id="panel">
+      <table mat-table [dataSource] ='dataSource' >
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header > id </th>
+          <td mat-cell *matCellDef="let emp"> {{emp.id}} </td>
+        </ng-container>  
+        <ng-container matColumnDef="nomProduit">
+              <th mat-header-cell *matHeaderCellDef > Nom </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.nomProduit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="nomCourtProduit">
+              <th mat-header-cell *matHeaderCellDef> nom court </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.nomCourtProduit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="prixBaseProduit">
+              <th mat-header-cell *matHeaderCellDef> prix base </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.prixBaseProduit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="prixVenteProduit">
+              <th mat-header-cell *matHeaderCellDef> prix vente </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.prixVenteProduit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="seuilMax">
+              <th mat-header-cell *matHeaderCellDef> seuil Max </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.seuilMax}} </td>
+            </ng-container>
+            <ng-container matColumnDef="uniteProduit">
+              <th mat-header-cell *matHeaderCellDef> unt produit </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.uniteProduit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="quantiteInit">
+              <th mat-header-cell *matHeaderCellDef> qte initiale </th>
+              <td mat-cell *matCellDef="let emp"> {{emp.quantiteInit}} </td>
+            </ng-container>
+            <ng-container matColumnDef="quantiteAct">
+                <th mat-header-cell *matHeaderCellDef> qte actuele </th>
+                <td mat-cell *matCellDef="let emp"> {{emp.quantiteAct}} </td>
+              </ng-container>
+            <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef> actions</th>
+              <td mat-cell *matCellDef="let row">
+                <button mat-icon-button (click)="onEdit(row)"><mat-icon>launch</mat-icon></button>
+                <button mat-icon-button color="warn" (click)="onDelete(row.id)"><mat-icon>delete_outline</mat-icon></button>
+              </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="colums"></tr>
+            <tr mat-row *matRowDef="let row; columns: colums;"></tr>
+      </table>
+      </div>
