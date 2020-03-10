@@ -43,6 +43,7 @@ import { ProduitService } from './services/produit.service';
     HttpClientModule
   ],
   providers: [FournisseurService,ClientService,ProduitService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents :[ClientComponent,FournisseurComponent,ProduitComponent]
 })
 export class AppModule { }

@@ -23,7 +23,8 @@ import * as Material from '@angular/material';
     Material.MatIconModule,
     Material.MatDividerModule,
     Material.MatListModule,
-    Material.MatSnackBarModule
+    Material.MatSnackBarModule,
+    Material.MatDialogModule
   
   ],
   exports:[
@@ -42,7 +43,9 @@ import * as Material from '@angular/material';
     Material.MatIconModule,
     Material.MatDividerModule,
     Material.MatListModule,
-    Material.MatSnackBarModule
+    Material.MatSnackBarModule,
+    Material.MatDialogModule
+
 
 
   ]

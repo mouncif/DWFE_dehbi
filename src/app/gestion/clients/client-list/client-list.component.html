@@ -1,7 +1,10 @@
+<button mat-raised-button  (click)="ajouter()">
+  <mat-icon>add</mat-icon>Create
+</button>
 <div class="mat-elevation-z8" id="panel">
     <table mat-table [dataSource] ='dataSource' >
       <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> id </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header > id </th>
         <td mat-cell *matCellDef="let emp"> {{emp.id}} </td>
       </ng-container>  
       <ng-container matColumnDef="nomClient">

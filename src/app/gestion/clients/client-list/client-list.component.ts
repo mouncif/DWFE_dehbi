@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { GestionService } from 'src/app/services/gestion.service';
 import { MatSnackBar } from '@angular/material';
 import { ClientService } from 'src/app/services/client.service';
-
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { ClientComponent } from '../client/client.component';
 @Component({
   selector: 'app-client-list',
   templateUrl: './client-list.component.html',
@@ -10,7 +10,7 @@ import { ClientService } from 'src/app/services/client.service';
 })
 export class ClientListComponent implements OnInit {
 
-  constructor(private service : ClientService,private not : MatSnackBar) { }
+  constructor(private service : ClientService,private not : MatSnackBar,private dialog : MatDialog) { }
   private dataSource ;
   colums=["id","nomClient","prenomClient","statuClient","villeClient","adresseClient","telClient","emailClient","actions"]
   ngOnInit() {
@@ -26,6 +26,23 @@ export class ClientListComponent implements OnInit {
       this.dataSource=this.service.getAllClients();
     });
     }
+    
+  }
+  ajouter(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus=true;
+    dialogConfig.width="60%";
+    this.dialog.open(ClientComponent,dialogConfig)
+    //this.dataSource=this.service.getAllClients();
+  }
+  onEdit(row){
+    this.service.fillFormGroup(row);
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus=true;
+    dialogConfig.width="60%";
+    this.dialog.open(ClientComponent,dialogConfig)
+    //this.dataSource=this.service.getAllClients();
+    
   }
 
 

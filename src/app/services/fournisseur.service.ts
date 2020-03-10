@@ -15,12 +15,13 @@ export class FournisseurService {
     Fournissuer []>(this.url);
   }
   addFour(f){
-    
     return this.http.post<Fournissuer>(this.url,f);
   }
   deleteFour(id){
-    
     return this.http.delete(`${this.url}/${id}`);
+  }
+  updateFour(f){
+    return this.http.put<Fournissuer>(`${this.url}/${f.id}`,f);
   }
   form : FormGroup = new FormGroup({
     id :new FormControl(null),
@@ -47,6 +48,8 @@ export class FournisseurService {
       faxFour: '',
       emailFour: ''
     });
-
 }  
+fillFormGroup(four){
+  this.form.setValue(four);
+}
 }

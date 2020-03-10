@@ -20,6 +20,10 @@ export class ClientService {
   deleteClient(id){
     return this.http.delete(`${this.url}/${id}`);
   }
+  updateClient(c){
+    return this.http.put<Client>(`${this.url}/${c.id}`,c);
+  }
+
   form : FormGroup = new FormGroup({
     id :new FormControl(null),
     nomClient :new FormControl('',Validators.required),
@@ -45,7 +49,12 @@ export class ClientService {
       emailClient: '',
       photoClient: ''
     });
+    
 
-}  
+} 
+fillFormGroup(client){
+  this.form.setValue(client);
+      
+} 
 
 }

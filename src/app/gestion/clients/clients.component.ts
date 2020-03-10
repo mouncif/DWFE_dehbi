@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ClientComponent } from './client/client.component';
+
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
@@ -11,5 +13,5 @@ export class ClientsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }

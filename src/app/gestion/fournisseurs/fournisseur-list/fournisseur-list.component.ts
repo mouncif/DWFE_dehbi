@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GestionService } from 'src/app/services/gestion.service';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar, MatDialogConfig, MatDialog } from '@angular/material';
 import { FournisseurService } from 'src/app/services/fournisseur.service';
+import { FournisseurComponent } from '../fournisseur/fournisseur.component';
 
 @Component({
   selector: 'app-fournisseur-list',
@@ -12,7 +13,7 @@ export class FournisseurListComponent implements OnInit {
   private dataSource ;
   colums=["nomFour","nomCourtFour","villeFour","adresseFour","telFixFour","telMobileFour","faxFour","emailFour","actions"]
   constructor( private service : 
-    FournisseurService,private not : MatSnackBar) { }
+    FournisseurService,private not : MatSnackBar,private dialog : MatDialog) { }
 
   ngOnInit() {
     this.dataSource=this.service.getAllFours();
@@ -27,5 +28,19 @@ export class FournisseurListComponent implements OnInit {
       this.dataSource=this.service.getAllFours();
     });
     }
+  }
+  ajouter(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus=true;
+    dialogConfig.width="60%";
+    this.dialog.open(FournisseurComponent,dialogConfig)
+  }
+  onEdit(row){
+    this.service.fillFormGroup(row);
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus=true;
+    dialogConfig.width="60%";
+    this.dialog.open(FournisseurComponent,dialogConfig)
+    
   }
 }

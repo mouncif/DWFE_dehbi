@@ -4,11 +4,55 @@
       "id": 1,
       "nomClient": "dehbi",
       "prenomClient": "ayoub",
-      "statuClient": "",
+      "statuClient": "status",
       "villeClient": "Meknes",
       "adresseClient": "adresse",
       "telClient": "01234595",
       "emailClient": "aaa@gmail.com",
+      "photoClient": ""
+    },
+    {
+      "id": 2,
+      "nomClient": "leonardo decaprio",
+      "prenomClient": "malou@gmail.com",
+      "statuClient": "testCrud",
+      "villeClient": "ouislane",
+      "adresseClient": "2/5/2020",
+      "telClient": "12345678",
+      "emailClient": "12345678@aaa",
+      "photoClient": ""
+    },
+    {
+      "id": 3,
+      "nomClient": "dehbi",
+      "prenomClient": "dehbi",
+      "statuClient": "0691223504",
+      "villeClient": "Meknes",
+      "adresseClient": "1/14/2020",
+      "telClient": "2/5/2020",
+      "emailClient": "aaa@gmail.com",
+      "photoClient": ""
+    },
+    {
+      "id": 4,
+      "nomClient": "0691223504",
+      "prenomClient": "malou@gmail.com",
+      "statuClient": "1/22/2020",
+      "villeClient": "Meknes",
+      "adresseClient": "12345781",
+      "telClient": "12345678",
+      "emailClient": "12345678@aaa",
+      "photoClient": ""
+    },
+    {
+      "id": 6,
+      "nomClient": "test",
+      "prenomClient": "test@gmail.com",
+      "statuClient": "0691223504",
+      "villeClient": "beniMelaal",
+      "adresseClient": "ouislane",
+      "telClient": "2/5/2020",
+      "emailClient": "dehbu@test",
       "photoClient": ""
     }
   ],
@@ -17,12 +61,23 @@
       "id": 1,
       "nomFour": "leonardo decaprio",
       "nomCourtFour": "malou@gmail.com",
-      "villeFour": "1/14/2020",
+      "villeFour": "meknes",
       "adresseFour": "ouislane",
       "telFixFour": "12345781",
       "telMobileFour": "12345678",
       "faxFour": "12345678",
       "emailFour": "dehbi@gmail"
+    },
+    {
+      "id": 2,
+      "nomFour": "dehbi",
+      "nomCourtFour": "ayoub",
+      "villeFour": "0691223504",
+      "adresseFour": "Meknes",
+      "telFixFour": "1/21/2020",
+      "telMobileFour": "12345678",
+      "faxFour": "aaa@gmail.com",
+      "emailFour": "aaa@gmail.com"
     }
   ]
 }
