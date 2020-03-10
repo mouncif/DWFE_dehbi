@@ -10,52 +10,19 @@
       "telClient": "01234595",
       "emailClient": "aaa@gmail.com",
       "photoClient": ""
-    },
-    {
-      "id": 2,
-      "nomClient": "dehbi",
-      "prenomClient": "ayoub",
-      "statuClient": "active",
-      "villeClient": "BM",
-      "adresseClient": "adresse",
-      "telClient": "01234595",
-      "emailClient": "dehbi@gmail.com",
-      "photoClient": ""
-    },
-    {
-      "id": 3,
-      "nomClient": "dehbi",
-      "prenomClient": "youb",
-      "statuClient": "",
-      "villeClient": "Meknes",
-      "adresseClient": "ouislane",
-      "telClient": "12345678",
-      "emailClient": "aaa@gmail.com",
-      "photoClient": ""
     }
   ],
   "fournissuers": [
     {
-      "id": "1",
-      "nomFour": "amine amine",
-      "nomCourtFour": "Amine",
-      "villeFour": "Dehbi",
-      "adresseFour": "Adresse",
-      "telFixFour": "123456789",
-      "telMobileFour": "123456789",
-      "faxFour": "123456789",
-      "emailFour": "12345678"
-    },
-    {
-      "id": "5BOeVZ-",
-      "nomFour": "fournisseur",
-      "nomCourtFour": "four",
-      "villeFour": "Meknes",
-      "adresseFour": "adresse",
-      "telFixFour": "12345678",
+      "id": 1,
+      "nomFour": "leonardo decaprio",
+      "nomCourtFour": "malou@gmail.com",
+      "villeFour": "1/14/2020",
+      "adresseFour": "ouislane",
+      "telFixFour": "12345781",
       "telMobileFour": "12345678",
       "faxFour": "12345678",
-      "emailFour": "aaa@gmail.com"
+      "emailFour": "dehbi@gmail"
     }
   ]
 }

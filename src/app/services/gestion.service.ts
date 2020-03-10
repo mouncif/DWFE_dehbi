@@ -18,6 +18,10 @@ export class GestionService {
     this.url ='http://localhost:3000/clients';
     return this.http.post<Client>(this.url,c);
   }
+  deleteClient(id){
+    this.url ='http://localhost:3000/clients';
+    return this.http.delete(`${this.url}/${id}`);
+  }
   getAllFours(){
     this.url ='http://localhost:3000/fournissuers';
     return this.http.get<Client[]>(this.url);
@@ -25,6 +29,10 @@ export class GestionService {
   addFour(f){
     this.url ='http://localhost:3000/fournissuers';
     return this.http.post<Fournissuer>(this.url,f);
+  }
+  deleteFour(id){
+    this.url ='http://localhost:3000/fournissuers';
+    return this.http.delete(`${this.url}/${id}`);
   }
   
 

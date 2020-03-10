@@ -22,7 +22,8 @@ import * as Material from '@angular/material';
     Material.MatTableModule,
     Material.MatIconModule,
     Material.MatDividerModule,
-    Material.MatListModule
+    Material.MatListModule,
+    Material.MatSnackBarModule
   
   ],
   exports:[
@@ -40,7 +41,9 @@ import * as Material from '@angular/material';
     Material.MatTableModule,
     Material.MatIconModule,
     Material.MatDividerModule,
-    Material.MatListModule
+    Material.MatListModule,
+    Material.MatSnackBarModule
+
 
   ]
 })

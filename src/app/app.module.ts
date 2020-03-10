@@ -17,6 +17,9 @@ import { GestionService } from './services/gestion.service';
 import { MaterialModule } from './material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FournisseurService } from './services/fournisseur.service';
+import { ClientService } from './services/client.service';
+import { ProduitService } from './services/produit.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [GestionService],
+  providers: [FournisseurService,ClientService,ProduitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
