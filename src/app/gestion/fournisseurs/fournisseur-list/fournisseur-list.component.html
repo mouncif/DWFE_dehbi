@@ -1,7 +1,8 @@
-<button mat-raised-button  (click)="ajouter()">
-  <mat-icon>add</mat-icon>Create
-</button>
-<h4>fournisseur</h4>
+<div  class="addbtn">
+  <button mat-raised-button  (click)="ajouter()">
+      <mat-icon>add</mat-icon> ajouter fournisseur
+    </button>
+  </div>
 <div class="mat-elevation-z8" id="panel">
     <table mat-table [dataSource] ='dataSource' >
         <ng-container matColumnDef="nomFour">

@@ -1,15 +1,34 @@
+<div>
+  <mat-toolbar>
+  <span><b>SmartVentes</b></span>
+  <span class="spacer"></span>
+  <mat-icon aria-label="Side nav toggle icon" class="icon">more_vert</mat-icon>
+  <mat-icon aria-label="Side nav toggle icon" class="icon">notifications</mat-icon>
+  <mat-icon aria-label="Side nav toggle icon" class="icon">settings</mat-icon>
 
+</mat-toolbar></div>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       
-      <a mat-list-item href="/clients">Gestion des clients</a>
-      <a mat-list-item href="/fournisseurs">sestion des fournisseurs</a>
-      <a mat-list-item href="/produits">gestion des produits</a>
+      <div class="btndiv">
+        <a  routerLink="/clients"><button mat-raised-button class="btn">
+          Gestion des clients
+        </button></a>
+        <a  routerLink="/fournisseurs">
+        <button mat-raised-button class="btn" >
+          sestion des fournisseurs
+        </button></a>
+        <a  routerLink="/produits">
+        <button mat-raised-button class="btn">
+          gestion des produits
+        </button>
+      </a>
+      </div>
+     
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -22,7 +41,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>project</span>
+      <span>
+        Administration
+      </span>
     </mat-toolbar>
     <router-outlet></router-outlet>
 

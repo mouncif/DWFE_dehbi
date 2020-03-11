@@ -4,12 +4,6 @@ div.container{
     margin: 0px 40px;
 }
 
-.fill-remaining-space {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
-    flex: 1 1 auto;
-  }
-
   form.normal-form{
     margin: 10px;
 }
@@ -23,28 +17,26 @@ div.container{
     width: 100%;
     }
 
-    .add-bottom-padding{
-        padding-bottom: 10px;
-    }
-    /* radio group */
 
-.button-row button{
-    margin: 5px;
-}
 
-h4{
-    text-align: center;
-}
 body{
     background-color: #CBCBCB;
     margin:0
 }
 .backdropBackground {
-    
     width: 60%;
   }
+  
   .btn-dialog-close{
     width: 45px;
     height: 40px;
-    padding: 0px !important;
+    padding: 0px ;
     float:right;  }
+    
+    .addbtn{
+        margin-left: 85px;
+        margin-top: 20px;
+    }
+   .spacer{
+    flex: 1 1 auto;
+   }

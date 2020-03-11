@@ -13,35 +13,24 @@
     },
     {
       "id": 2,
-      "nomClient": "leonardo decaprio",
-      "prenomClient": "malou@gmail.com",
+      "nomClient": "leonardo ",
+      "prenomClient": "decaprio",
       "statuClient": "testCrud",
       "villeClient": "ouislane",
-      "adresseClient": "2/5/2020",
+      "adresseClient": "address",
       "telClient": "12345678",
-      "emailClient": "12345678@aaa",
+      "emailClient": "nom@prenom.com",
       "photoClient": ""
     },
     {
       "id": 3,
       "nomClient": "dehbi",
       "prenomClient": "dehbi",
-      "statuClient": "0691223504",
+      "statuClient": "",
       "villeClient": "Meknes",
-      "adresseClient": "1/14/2020",
-      "telClient": "2/5/2020",
+      "adresseClient": "adresse",
+      "telClient": "0663354413",
       "emailClient": "aaa@gmail.com",
-      "photoClient": ""
-    },
-    {
-      "id": 4,
-      "nomClient": "0691223504",
-      "prenomClient": "malou@gmail.com",
-      "statuClient": "1/22/2020",
-      "villeClient": "Meknes",
-      "adresseClient": "12345781",
-      "telClient": "12345678",
-      "emailClient": "12345678@aaa",
       "photoClient": ""
     }
   ],
@@ -49,7 +38,7 @@
     {
       "id": 1,
       "nomFour": "leonardo decaprio",
-      "nomCourtFour": "malou@gmail.com",
+      "nomCourtFour": "leo",
       "villeFour": "meknes",
       "adresseFour": "ouislane",
       "telFixFour": "12345781",
@@ -61,25 +50,36 @@
       "id": 2,
       "nomFour": "dehbi",
       "nomCourtFour": "ayoub",
-      "villeFour": "0691223504",
+      "villeFour": "Meknes",
       "adresseFour": "Meknes",
-      "telFixFour": "1/21/2020",
-      "telMobileFour": "12345678",
-      "faxFour": "aaa@gmail.com",
+      "telFixFour": "055658974",
+      "telMobileFour": "0606060606",
+      "faxFour": "0545698740",
       "emailFour": "aaa@gmail.com"
     }
   ],
   "produits": [
     {
       "id": 1,
-      "nomProduit": "to delete",
-      "nomCourtProduit": "ayoub",
+      "nomProduit": "PC-toshiba",
+      "nomCourtProduit": "pc",
       "prixBaseProduit": "12",
-      "prixVenteProduit": "1",
-      "seuilMax": "1",
-      "uniteProduit": "1",
-      "quantiteInit": "1",
-      "quantiteAct": "1"
+      "prixVenteProduit": "15",
+      "seuilMax": "1000",
+      "uniteProduit": "15",
+      "quantiteInit": "10",
+      "quantiteAct": "9"
+    },
+    {
+      "id": 2,
+      "nomProduit": "imprimante",
+      "nomCourtProduit": "imp",
+      "prixBaseProduit": "12",
+      "prixVenteProduit": "15",
+      "seuilMax": "124",
+      "uniteProduit": "456",
+      "quantiteInit": "45",
+      "quantiteAct": "12"
     }
   ]
 }
