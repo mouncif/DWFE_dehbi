@@ -37,5 +37,10 @@ private fournissuers :Fournissuer []=[]
     this.dialogRef.close();
     window.location.reload();
 }
+onClose(){
+  this.service.form.reset();
+  this.service.initializeFormGroup();
+  this.dialogRef.close();
+}
 
 }

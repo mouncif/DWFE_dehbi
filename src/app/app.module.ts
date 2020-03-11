@@ -20,6 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FournisseurService } from './services/fournisseur.service';
 import { ClientService } from './services/client.service';
 import { ProduitService } from './services/produit.service';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -32,15 +39,22 @@ import { ProduitService } from './services/produit.service';
     FournisseurListComponent,
     ProduitsComponent,
     ProduitComponent,
-    ProduitListComponent
+    ProduitListComponent,
+    SideBarComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [FournisseurService,ClientService,ProduitService],
   bootstrap: [AppComponent],

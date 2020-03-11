@@ -33,6 +33,7 @@ export class FournisseurListComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus=true;
     dialogConfig.width="60%";
+    dialogConfig.disableClose = true;
     this.dialog.open(FournisseurComponent,dialogConfig)
   }
   onEdit(row){

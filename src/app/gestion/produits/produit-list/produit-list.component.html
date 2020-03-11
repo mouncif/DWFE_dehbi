@@ -1,12 +1,11 @@
 <button mat-raised-button  (click)="ajouter()">
     <mat-icon>add</mat-icon>Create
   </button>
+  <h4>produit</h4>
+
   <div class="mat-elevation-z8" id="panel">
       <table mat-table [dataSource] ='dataSource' >
-        <ng-container matColumnDef="id">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header > id </th>
-          <td mat-cell *matCellDef="let emp"> {{emp.id}} </td>
-        </ng-container>  
+          
         <ng-container matColumnDef="nomProduit">
               <th mat-header-cell *matHeaderCellDef > Nom </th>
               <td mat-cell *matCellDef="let emp"> {{emp.nomProduit}} </td>

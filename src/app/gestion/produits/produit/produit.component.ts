@@ -38,5 +38,10 @@ export class ProduitComponent implements OnInit {
   window.location.reload();
   
 }
+onClose(){
+    this.service.form.reset();
+    this.service.initializeFormGroup();
+    this.dialogRef.close();
+}
 
 }

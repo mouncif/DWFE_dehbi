@@ -1,5 +1,8 @@
+
 <div class="mat-elevation-z8" id="panel">
-    <mat-list-item><h4>Ajouter Client</h4></mat-list-item>
+   <div class="topdiv"><button class="btn-dialog-close" mat-stroked-button (click)="onClose()"><mat-icon>clear</mat-icon></button></div> 
+    <mat-divider></mat-divider>
+    <mat-list-item><h4> Client</h4></mat-list-item>
 <mat-divider></mat-divider>
     <form [formGroup] ='service.form' class="normal-form" (submit)="onSubmit()">
         <mat-grid-list cols="2" rowHeight="400px">

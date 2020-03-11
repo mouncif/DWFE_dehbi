@@ -12,7 +12,7 @@ export class ProduitListComponent implements OnInit {
   constructor(private service : ProduitService,private not : MatSnackBar,private dialog : MatDialog) { }
 
   private dataSource ;
-  colums=["id","nomProduit","nomCourtProduit","prixBaseProduit","prixVenteProduit","seuilMax","uniteProduit","quantiteInit","quantiteAct","actions"]
+  colums=["nomProduit","nomCourtProduit","prixBaseProduit","prixVenteProduit","seuilMax","uniteProduit","quantiteInit","quantiteAct","actions"]
   ngOnInit() {
     this.dataSource=this.service.getAllProduits();
   }
@@ -32,6 +32,7 @@ export class ProduitListComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus=true;
     dialogConfig.width="60%";
+    dialogConfig.disableClose = true;
     this.dialog.open(ProduitComponent,dialogConfig)
   }
   onEdit(row){

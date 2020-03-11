@@ -27,9 +27,6 @@ div.container{
         padding-bottom: 10px;
     }
     /* radio group */
-mat-radio-group mat-radio-button{
-    margin-left: 5px;
-}
 
 .button-row button{
     margin: 5px;
@@ -40,4 +37,14 @@ h4{
 }
 body{
     background-color: #CBCBCB;
+    margin:0
 }
+.backdropBackground {
+    
+    width: 60%;
+  }
+  .btn-dialog-close{
+    width: 45px;
+    height: 40px;
+    padding: 0px !important;
+    float:right;  }

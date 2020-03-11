@@ -6,3 +6,7 @@ table{
 #panel {
     margin: 80px;
   }
+  .backdropBackground {
+    /* your css needs */
+    opacity: 0.4;
+  }

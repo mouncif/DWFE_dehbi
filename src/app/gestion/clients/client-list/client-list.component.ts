@@ -12,7 +12,7 @@ export class ClientListComponent implements OnInit {
 
   constructor(private service : ClientService,private not : MatSnackBar,private dialog : MatDialog) { }
   private dataSource ;
-  colums=["id","nomClient","prenomClient","statuClient","villeClient","adresseClient","telClient","emailClient","actions"]
+  colums=["nomClient","prenomClient","statuClient","villeClient","adresseClient","telClient","emailClient","actions"]
   ngOnInit() {
     this.dataSource=this.service.getAllClients();
   }
@@ -31,7 +31,8 @@ export class ClientListComponent implements OnInit {
   ajouter(){
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus=true;
-    dialogConfig.width="60%";
+    dialogConfig.disableClose = true;
+    dialogConfig.panelClass ="backdropBackground"
     this.dialog.open(ClientComponent,dialogConfig)
     //this.dataSource=this.service.getAllClients();
   }
@@ -39,7 +40,7 @@ export class ClientListComponent implements OnInit {
     this.service.fillFormGroup(row);
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus=true;
-    dialogConfig.width="60%";
+    dialogConfig.panelClass ="backdropBackground"
     this.dialog.open(ClientComponent,dialogConfig)
     //this.dataSource=this.service.getAllClients();
     
